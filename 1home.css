@@ -1,0 +1,215 @@
+/* dashboard color code1 blue: #3f4d71
+backgoud color off-white:  #F8F0DF;
+ color code for font orange:  #ff6666
+ color code2:  #cccccc
+ color code for font2: #333333
+ maroon: #BD1616
+ offwhite: #F8F0DF*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+    font-family: 'Poppins';
+}
+
+header .inner{
+    width: 1300px; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo img{
+    height: 90px;
+    margin-top: 5px; /* Optical alignment of the logo */
+}
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: #BD1616;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+header nav .button{
+    background-color: #1ab26b; /* This HEX is the color of the button */
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+
+
+ /* body{
+ 	font-family: sans-serif;
+ 	background-color: #F8F0DF;
+ }
+
+.logo{
+	text-decoration: none;
+	color: #BD1616;
+	font-size: 30px;
+	font-family: big john;
+	padding: 20px 20px;
+	width: 20%;
+	float:  left;
+	background: transparent;
+	height: 90px;
+}
+.menu{
+	width: 50%;
+	float: right;
+	list-style: none;
+	padding-top: 10px;
+	background: transparent;
+}
+.menu li{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color:  #3f4d71;
+	font-size: 15px;
+	float: left;
+	padding-right: 10px;
+}
+.menu li:hover{
+	background: #F0E5CF;
+}
+.menu li a{
+	text-decoration: none;
+	font-family: baloo;
+	color: #BD1616;
+	text-transform: uppercase;
+
+}
+.menu li.hover a{
+	color: #000;
+}
+
+.slicknav_menu{
+	display: none;
+}
+
+
+// responsice css
+
+  @media all and (max-width: 769px)
+ {
+	.slicknav_menu{
+		display: block;
+		width:  40%;
+		float: right;
+		background: transparent;
+	}
+	.dashboard-text{
+		position: absolute;
+		top:  100%;
+		left: 50%;
+		transform:  translate(-50%,-50%);
+		color: #ff6666;
+		text-align: center;
+	}
+	.slicknav_menu li {
+	    text-align: right;
+    	text-transform: uppercase;
+	}
+    .slicknav_nav a {
+	      margin: 2px -5px;
+        font-family: baloo;
+	}
+    .slicknav_menu li:hover a {
+ 		color: #ff6666;
+
+	}
+	.slicknav_nav a:hover{
+		background: transparent;
+		color: #fff;
+	}
+	.menu{
+		display: none;
+	}
+	.slicknav_btn{
+		margin: 10px 5px 6px;
+		text-decoration: none;
+		border-radius: 5px;
+	}
+	.slicknav_menu .slicknav_menutxt{
+		color: #000;
+		text-shadow: none;
+	}
+	.slicknav_menu .slicknav_icon-bar{
+		background-color: #262626;
+		box-shadow: none;
+	 }
+	.banner-text{
+		top:  55%;
+		}
+	header{
+		padding: 5px 10px;
+	}
+	.banner-text h2{
+		font-size:  21px;
+	}
+	.banner-text p{
+		font-size: 15px;
+	}
+	.banner-text a{
+		font-size: 11px;
+		padding: 10px 5px;
+	}
+	.logo{
+		font-size: 20px;
+	}
+	.li:hover{
+		background: yellow;
+	}
+	.slicknav_nav li:hover a{
+		color: #000;
+	}
+
+  }
+ */

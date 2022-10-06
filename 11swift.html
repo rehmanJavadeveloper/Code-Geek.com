@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the style for the header -->
+    <link rel="stylesheet" href="10swptxt.css">
+
+    <!-- This is just a font that we'll be using. You can remove lines 12-14 if you don't want to use Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container1">
+    <!-- Start of the header -->
+    <header>
+        <script type="text/javascript">
+            windows.addEventListener("Scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.ScrollY > 0)
+            })
+        </script>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <!-- The below line can be an image or a h1, either will work -->
+                    <a href="index.html"><img src="logo1.png" alt="CODE GEEK"></a>
+                    <!-- <h1>My Logo</h1> -->
+                </div>
+            </div>
+
+            <nav>
+                <!-- Each of the below lines look complicated. There is a reason for this markup though!
+                <li> tag will be the container for the table.
+                <span> will be the part that centers the content inside it
+                <a> is the actual clickable part -->
+                <li><span><a href="index.html">home</a></span></li>
+                <li><span><a href="5video.html">video</a></span></li>
+                <li><span><a href="7books.html">books</a></span></li>
+                <li><span><a href="https://www.jdoodle.com/execute-swift-online">compiler</a></span></li>
+                <!-- On the line above, remove the class="button" if you don't want the final
+                element to be a button -->
+            </nav>
+        </div>
+    </header>
+    <!-- End of the header --> 
+    </div>
+
+    <div class="wrapper">
+    <div class="sidebar">
+        <h2>Swift</h2>
+        <ul>
+            <li><a href="#section0">Swift - Home</a></li>
+            <li><a href="#section1">Swift - Overview</a></li>
+            <li><a href="#section2">Swift - Environment Setup</a></li>
+            <li><a href="#section3">Swift - Basic Syntax</a></li>
+            <li><a href="#section4">Swift - Object and Classes</a></li>
+            <li><a href="#section5">Swift - Constructors</a></li>
+            <li><a href="#section6">Swift - Basic Datatypes</a></li>
+            <li><a href="#section7">Swift - Variable Types</a></li>
+            <li><a href="#section8">Swift - Modifier Types</a></li>
+            <li><a href="#section9">Swift - Basic Operators</a></li>
+            <li><a href="#section10">Swift - Loop Control</a></li>
+            <li><a href="#section11">Swift - Decision Making</a></li>
+            <li><a href="#section12">Swift - Character Class</a></li>
+            <li><a href="#section13">Swift - Strings Class</a></li>
+            <li><a href="#section14">Swift - Arrays</a></li>
+        </ul> 
+    </div>
+    </div>
+
+    <div class="main_content">
+        <div class="header">Welcome!! To Swift.</div>  
+        <div class="info">
+        <div id="section0">
+          wift 4 is a new programming language developed by Apple Inc for iOS and OS X development. Swift 4 adopts the best of C and Objective-C, without the constraints of C compatibility. Swift 4 uses the same runtime as the existing Obj-C system on Mac OS and iOS, which enables Swift 4 programs to run on many existing iOS 6 and OS X 10.8 platforms.
+
+Audience
+This tutorial is designed for software programmers who would like to learn the basics of Swift 4 programming language from scratch. This tutorial will give you enough understanding on Swift 4 programming language from where you can take yourself to higher levels of expertise.
+
+Prerequisites
+Before proceeding with this tutorial, you should have a basic understanding of Computer Programming terminologies and exposure to any programming language.
+          </pre>
+          <div>
+            <pre>
+            Applications of Swift Programming
+            The latest release of the Swift Standard Edition is Swift SE 8. With the advancement of Swift and its widespread popularity, multiple 
+            configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
+
+            The new J2 versions were renamed as Swift SE, Swift EE, and Swift ME respectively. Swift is guaranteed to be Write Once, Run Anywhere.
+
+            Multithreaded − With Swift's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. 
+            This design feature allows the developers to construct interactive applications that can run smoothly.
+
+            Interpreted − Swift byte code is translated on the fly to native machine instructions and is not stored anywhere. 
+            The development process is more rapid and analytical since the linking is an incremental and light-weight process.
+
+            High Performance − With the use of Just-In-Time compilers, Swift enables high performance.
+
+            Distributed − Swift is designed for the distributed environment of the internet.
+
+            Dynamic − Swift is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. 
+            Swift programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+
+            Audience
+            This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to Swift Programming language.  
+            </pre>
+          </div>
+      </div>
+
+        <div id="section1" class="sec">
+        <div>
+        <h2>Swift - Overview</h2>
+        <pre>    
+        Swift 4 is a new programming language developed by Apple Inc for iOS and OS X development. Swift 4 adopts the best of C and Objective-C, without the constraints of C compatibility.
+
+            Swift 4 makes use of safe programming patterns.
+
+            Swift 4 provides modern programming features.
+
+            Swift 4 provides Objective-C like syntax.
+
+            Swift 4 is a fantastic way to write iOS and OS X apps.
+
+            Swift 4 provides seamless access to existing Cocoa frameworks.
+
+            Swift 4 unifies the procedural and object-oriented portions of the language.
+
+            Swift 4 does not need a separate library import to support functionalities like input/output or string handling.
+
+            Swift 4 uses the same runtime as the existing Obj-C system on Mac OS and iOS, which enables Swift 4 programs to run on many existing iOS 6 and OS X 10.8 platforms.
+
+            Swift 4 comes with playground feature where Swift 4 programmers can write their code and execute it to see the results immediately.
+
+            The first public release of Swift was released in 2010. It took Chris Lattner almost 14 years to come up with the first official version, and later, it was supported by many other contributors. Swift 4 has been included in Xcode 6 beta.
+
+            Swift designers took ideas from various other popular languages such as Objective-C, Rust, Haskell, Ruby, Python, C#, and CLU.
+        </pre>
+        </div>
+
+
+       <div id="section2" class="sec"> 
+      <div>
+        <h2>Swift - Environment Setup</h2>
+      <pre>
+    Local Environment Setup
+Swift 4 provides a Playground platform for learning purpose and we are going to setup the same. You need xCode software to start your Swift 4 coding in Playground. Once you are comfortable with the concepts of Swift 4, you can use xCode IDE for iOS/OS x application development.
+
+To start with, we consider you already have an account at Apple Developer website. Once you are logged in, go to the following link − Download for Apple Developers
+
+This will list down a number of software available as follows −
+
+Now select xCode and download it by clicking on the given link near to disc image. After downloading the dmg file, you can install it by simply double-clicking on it and following the given instructions. Finally, follow the given instructions and drop xCode icon into the Application folder.
+
+Now you have xCode installed on your machine. Next, open Xcode from the Application folder and proceed after accepting the terms and conditions. If everything is fine, you will get the following screen −
+
+Now you have xCode installed on your machine. Next, open Xcode from the Application folder and proceed after accepting the terms and conditions. If everything is fine, you will get the following screen −
+
+Following is the code taken from the default Swift 4 Playground Window.
+
+import UIKit
+var str = "Hello, playground"
+If you create the same program for OS X program, then it will include import Cocoa and the program will look like as follows −
+
+import Cocoa
+var str = "Hello, playground"
+When the above program gets loaded, it should display the following result in Playground result area (Right Hand Side).
+
+Hello, playground
+Congratulations, you have your Swift 4 programming environment ready and you can proceed with your learning vehicle "Tutorials Point".
+
+
+      </pre>
+      </div>
+
+        <div id="section3" class="sec">
+        <h2>Swift - Basic Syntax</h2>
+        <pre>
+            When we consider a Swift program, it can be defined as a collection of objects that communicate via invoking each other's methods. 
+            Let us now briefly look into what do class, object, methods, and instance variables mean.
+
+        Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, 
+        barking, eating. An object is an instance of a class.
+
+        Class − A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.
+
+        Methods − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated 
+        and all the actions are executed.
+
+        Instance Variables − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance 
+        variables.
+
+        First Swift Program
+        Let us look at a simple code that will print the words Hello World.   
+
+        Example
+Live Demo
+public class MyFirstSwiftProgram {
+
+   /* This is my first Swift program.
+    * This will print 'Hello World' as the output
+    */
+
+   public static void main(String []args) {
+      System.out.println("Hello World"); // prints Hello World
+   }
+}
+Let's look at how to save the file, compile, and run the program. Please follow the subsequent steps −
+
+Open notepad and add the code as above.
+
+Save the file as: MyFirstSwiftProgram.Swift.
+
+Open a command prompt window and go to the directory where you saved the class. Assume it's C:\.
+
+Type 'Swiftc MyFirstSwiftProgram.Swift' and press enter to compile your code. If there are no errors in your code, the command prompt will take you to the next line (Assumption : The path variable is set).
+
+Now, type ' Swift MyFirstSwiftProgram ' to run your program.
+
+You will be able to see ' Hello World ' printed on the window.
+
+Output
+C:\> Swiftc MyFirstSwiftProgram.Swift
+C:\> Swift MyFirstSwiftProgram 
+Hello World
+Basic Syntax
+About Swift programs, it is very important to keep in mind the following points.
+
+Case Sensitivity − Swift is case sensitive, which means identifier Hello and hello would have different meaning in Swift.
+
+Class Names − For all class names the first letter should be in Upper Case. If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.
+
+Example: class MyFirstSwiftClass
+
+Method Names − All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case.
+
+Example: public void myMethodName()
+
+Program File Name − Name of the program file should exactly match the class name.
+
+When saving the file, you should save it using the class name (Remember Swift is case sensitive) and append '.Swift' to the end of the name (if the file name and the class name do not match, your program will not compile).
+
+But please make a note that in case you do not have a public class present in the file then file name can be different than class name. It is also not mandatory to have a public class in the file.
+
+Example: Assume 'MyFirstSwiftProgram' is the class name. Then the file should be saved as 'MyFirstSwiftProgram.Swift'
+
+public static void main(String args[]) − Swift program processing starts from the main() method which is a mandatory part of every Swift program.
+
+Swift Identifiers
+All Swift components require names. Names used for classes, variables, and methods are called identifiers.
+
+In Swift, there are several points to remember about identifiers. They are as follows −
+
+All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).
+
+After the first character, identifiers can have any combination of characters.
+
+A key word cannot be used as an identifier.
+
+Most importantly, identifiers are case sensitive.
+
+Examples of legal identifiers: age, $salary, _value, __1_value.
+
+Examples of illegal identifiers: 123abc, -salary.
+
+Swift Modifiers
+Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers −
+
+Access Modifiers − default, public , protected, private
+
+Non-access Modifiers − final, abstract, strictfp
+
+We will be looking into more details about modifiers in the next section.
+
+Swift Variables
+Following are the types of variables in Swift −
+
+Local Variables
+Class Variables (Static Variables)
+Instance Variables (Non-static Variables)
+Swift Arrays
+Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap. We will look into how to declare, construct, and initialize in the upcoming chapters.
+
+Swift Enums
+Enums were introduced in Swift 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.
+
+With the use of enums it is possible to reduce the number of bugs in your code.
+
+For example, if we consider an application for a fresh juice shop, it would be possible to restrict the glass size to small, medium, and large. This would make sure that it would not allow anyone to order any size other than small, medium, or large.
+
+Example
+Live Demo
+class FreshJuice {
+   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   FreshJuiceSize size;
+}
+
+public class FreshJuiceTest {
+
+   public static void main(String args[]) {
+      FreshJuice juice = new FreshJuice();
+      juice.size = FreshJuice.FreshJuiceSize.MEDIUM ;
+      System.out.println("Size: " + juice.size);
+   }
+}
+The above example will produce the following result −
+
+Output
+Size: MEDIUM
+Note − Enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
+
+Swift Keywords
+The following list shows the reserved words in Swift. These reserved words may not be used as constant or variable or any other identifier names.
+
+abstract    assert  boolean break
+byte    case    catch   char
+class   const   continue    default
+do  double  else    enum
+extends final   finally float
+for goto    if  implements
+import  instanceof  int interface
+long    native  new package
+private protected   public  return
+short   static  strictfp    super
+switch  synchronized    this    throw
+throws  transient   try void
+volatile    while       
+Comments in Swift
+Swift supports single-line and multi-line comments very similar to C and C++. All characters available inside any comment are ignored by Swift compiler.
+
+Example
+Live Demo
+public class MyFirstSwiftProgram {
+    ublic class MyFirstSwiftProgram {
+
+   /* This is my first Swift program.
+    * This will print 'Hello World' as the output
+    * This is an example of multi-line comments.
+    */
+
+   public static void main(String []args) {
+      // This is an example of single line comment
+      /* This is also an example of single line comment. */
+      System.out.println("Hello World");
+   }
+}
+Output
+Hello World
+Using Blank Lines
+A line containing only white space, possibly with a comment, is known as a blank line, and Swift totally ignores it.
+
+Inheritance
+In Swift, classes can be derived from classes. Basically, if you need to create a new class and here is already a class that has some of the code you require, then it is possible to derive your new class from the already existing code.
+
+This concept allows you to reuse the fields and methods of the existing class without having to rewrite the code in a new class. In this scenario, the existing class is called the superclass and the derived class is called the subclass.
+
+Interfaces
+In Swift language, an interface can be defined as a contract between objects on how to communicate with each other. Interfaces play a vital role when it comes to the concept of inheritance.
+
+An interface defines the methods, a deriving class (subclass) should use. But the implementation of the methods is totally up to the subclass.
+
+What is Next?
+The next section explains about Objects and classes in Swift programming. At the end of the session, you will be able to get a clear picture as to what are objects and what are classes in Swift.
+
+        </pre>
+        </div>
+
+        <div id="section4" class="sec">
+        <h2>Swift - Object and Classes</h2>
+          <pre>
+             Swift is an Object-Oriented Language. As a language that has the Object-Oriented feature, Swift supports the following fundamental concepts −
+
+            Polymorphism
+            Inheritance
+            Encapsulation
+            Abstraction
+            Classes
+            Objects
+            Instance
+            Method
+            Message Passing
+            In this chapter, we will look into the concepts - Classes and Objects.
+
+            Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors – wagging the tail, 
+            barking, eating. An object is an instance of a class.
+
+            Class − A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.
+
+            Objects in Swift
+            Let us now look deep into what are objects. If we consider the real-world, we can find many objects around us, cars, dogs, humans, 
+            etc. All these objects have a state and a behavior.
+
+            If we consider a dog, then its state is - name, breed, color, and the behavior is - barking, wagging the tail, running.
+
+            If you compare the software object with a real-world object, they have very similar characteristics.
+
+            Software objects also have a state and a behavior. A software object's state is stored in fields and behavior is shown via methods.
+
+            So in software development, methods operate on the internal state of an object and the object-to-object communication is done via methods.
+
+            Classes in Swift
+            A class is a blueprint from which individual objects are created.
+
+            Following is a sample of a class.
+
+            Example
+            public class Dog {
+               String breed;
+               int age;
+               String color;
+
+               void barking() {
+               }
+
+               void hungry() {
+               }
+
+               void sleeping() {
+               }
+            }
+            A class can contain any of the following variable types.
+
+            Local variables − Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.
+
+            Instance variables − Instance variables are variables within a class but outside any method. These variables are initialized when the 
+            class is instantiated. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.
+
+            Class variables − Class variables are variables declared within a class, outside any method, with the static keyword.
+
+            A class can have any number of methods to access the value of various kinds of methods. In the above example, barking(), hungry() and 
+            sleeping() are methods.
+
+            Following are some of the important topics that need to be discussed when looking into classes of the Swift Language.
+
+            Constructors
+            When discussing about classes, one of the most important sub topic would be constructors. Every class has a constructor. If we do not 
+            explicitly write a constructor for a class, the Swift compiler builds a default constructor for that class.
+
+            Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the 
+            same name as the class. A class can have more than one constructor.
+
+            Following is an example of a constructor −
+          </pre>
+            </div>
+
+            <div id="section5" class="sec">
+            <h2>Swift - Constructors</h2>
+            A constructor initializes an object when it is created. It has the same name as its class and is syntactically similar to a method. 
+            However, constructors have no explicit return type.
+
+            Typically, you will use a constructor to give initial values to the instance variables defined by the class, or to perform any other 
+            start-up procedures required to create a fully formed object.
+
+            All classes have constructors, whether you define one or not, because Swift automatically provides a default constructor that initializes 
+            all member variables to zero. However, once you define your own constructor, the default constructor is no longer used.
+            Syntax
+            Following is the syntax of a constructor −
+
+            class ClassName {
+               ClassName() {
+               }
+            }
+            Swift allows two types of constructors namely −
+
+            No argument Constructors
+            Parameterized Constructors
+            No argument Constructors
+            As the name specifies the no argument constructors of Swift does not accept any parameters instead, using these constructors 
+            the instance variables of a method will be initialized with fixed values for all objects.
+            Example
+            Public class MyClass {
+               Int num;
+               MyClass() {
+                  num = 100;
+               }
+            }
+            You would call constructor to initialize objects as follows
+
+            public class ConsDemo {
+               public static void main(String args[]) {
+                  MyClass t1 = new MyClass();
+                  MyClass t2 = new MyClass();
+                  System.out.println(t1.num + " " + t2.num);
+               }
+            }
+            This would produce the following result
+
+            100 100
+            Parameterized Constructors
+            Most often, you will need a constructor that accepts one or more parameters. Parameters are added to a constructor in the same 
+            way that they are added to a method, just declare them inside the parentheses after the constructor's name.
+          </pre>
+         </div>
+        <div id="section6" class="sec">
+             <h2>Swift - Basic Datatypes</h2>
+             <pre>
+                Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in the memory.
+
+Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables.
+
+There are two data types available in Swift −
+
+Primitive Data Types
+Reference/Object Data Types
+Primitive Data Types
+There are eight primitive datatypes supported by Swift. Primitive datatypes are predefined by the language and named by a keyword. Let us now look into the eight primitive data types in detail.
+
+byte
+Byte data type is an 8-bit signed two's complement integer
+
+Minimum value is -128 (-2^7)
+
+Maximum value is 127 (inclusive)(2^7 -1)
+
+Default value is 0
+
+Byte data type is used to save space in large arrays, mainly in place of integers, since a byte is four times smaller than an integer.
+
+Example: byte a = 100, byte b = -50
+
+short
+Short data type is a 16-bit signed two's complement integer
+
+Minimum value is -32,768 (-2^15)
+
+Maximum value is 32,767 (inclusive) (2^15 -1)
+
+Short data type can also be used to save memory as byte data type. A short is 2 times smaller than an integer
+
+Default value is 0.
+
+Example: short s = 10000, short r = -20000
+
+int
+Int data type is a 32-bit signed two's complement integer.
+
+Minimum value is - 2,147,483,648 (-2^31)
+
+Maximum value is 2,147,483,647(inclusive) (2^31 -1)
+
+Integer is generally used as the default data type for integral values unless there is a concern about memory.
+
+The default value is 0
+
+Example: int a = 100000, int b = -200000
+
+long
+Long data type is a 64-bit signed two's complement integer
+Minimum value is -9,223,372,036,854,775,808(-2^63)
+Maximum value is 9,223,372,036,854,775,807 (inclusive)(2^63 -1)
+This type is used when a wider range than int is needed
+Default value is 0L
+Example: long a = 100000L, long b = -200000L
+float
+Float data type is a single-precision 32-bit IEEE 754 floating point
+
+Float is mainly used to save memory in large arrays of floating point numbers
+
+Default value is 0.0f
+
+Float data type is never used for precise values such as currency
+
+Example: float f1 = 234.5f
+
+double
+double data type is a double-precision 64-bit IEEE 754 floating point
+
+This data type is generally used as the default data type for decimal values, generally the default choice
+
+Double data type should never be used for precise values such as currency
+
+Default value is 0.0d
+
+Example: double d1 = 123.4
+
+boolean
+boolean data type represents one bit of information
+There are only two possible values: true and false
+This data type is used for simple flags that track true/false conditions
+Default value is false
+Example: boolean one = true
+char
+char data type is a single 16-bit Unicode character
+Minimum value is '\u0000' (or 0)
+Maximum value is '\uffff' (or 65,535 inclusive)
+Char data type is used to store any character
+Example: char letterA = 'A'
+Reference Datatypes
+Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy, etc.
+
+Class objects and various type of array variables come under reference datatype.
+
+Default value of any reference variable is null.
+
+A reference variable can be used to refer any object of the declared type or any compatible type.
+
+Example: Animal animal = new Animal("giraffe");
+
+Swift Literals
+A literal is a source code representation of a fixed value. They are represented directly in the code without any computation.
+
+Literals can be assigned to any primitive type variable. For example −
+
+byte a = 68;
+char a = 'A';
+byte, int, long, and short can be expressed in decimal(base 10), hexadecimal(base 16) or octal(base 8) number systems as well.
+
+Prefix 0 is used to indicate octal, and prefix 0x indicates hexadecimal when using these number systems for literals. For example −
+
+int decimal = 100;
+int octal = 0144;
+int hexa =  0x64;
+String literals in Swift are specified like they are in most other languages by enclosing a sequence of characters between a pair of double quotes. Examples of string literals are −
+
+Example
+"Hello World"
+"two\nlines"
+"\"This is in quotes\""
+String and char types of literals can contain any Unicode characters. For example −
+
+char a = '\u0001';
+String a = "\u0001";
+          </pre>
+        </div>
+
+        <div id="section7" class="sec">
+            <h2>Swift - Variable Types </h2>
+          <pre>
+              A variable provides us with named storage that our programs can manipulate. Each variable in Swift has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+
+You must declare all variables before they can be used. Following is the basic form of a variable declaration −
+
+data type variable [ = value][, variable [ = value] ...] ;
+Here data type is one of Swift's datatypes and variable is the name of the variable. To declare more than one variable of the specified type, you can use a comma-separated list.
+
+Following are valid examples of variable declaration and initialization in Swift −
+
+Example
+int a, b, c;         // Declares three ints, a, b, and c.
+int a = 10, b = 10;  // Example of initialization
+byte B = 22;         // initializes a byte type variable B.
+double pi = 3.14159; // declares and assigns a value of PI.
+char a = 'a';        // the char variable a iis initialized with value 'a'
+This chapter will explain various variable types available in Swift Language. There are three kinds of variables in Swift −
+
+Local variables
+Instance variables
+Class/Static variables
+Local Variables
+Local variables are declared in methods, constructors, or blocks.
+
+Local variables are created when the method, constructor or block is entered and the variable will be destroyed once it exits the method, constructor, or block.
+
+Access modifiers cannot be used for local variables.
+
+Local variables are visible only within the declared method, constructor, or block.
+
+Local variables are implemented at stack level internally.
+
+There is no default value for local variables, so local variables should be declared and an initial value should be assigned before the first use.
+
+Example
+Here, age is a local variable. This is defined inside pupAge() method and its scope is limited to only this method.
+
+Live Demo
+public class Test {
+   public void pupAge() {
+      int age = 0;
+      age = age + 7;
+      System.out.println("Puppy age is : " + age);
+   }
+
+   public static void main(String args[]) {
+      Test test = new Test();
+      test.pupAge();
+   }
+}
+          </pre>
+      </div>
+      <div id="section8" class="sec">
+        <h2>Swift - Modifier Types</h2>
+          <pre>
+            Modifiers are keywords that you add to those definitions to change their meanings. Swift language has a wide variety of modifiers, including the following −
+
+Swift Access Modifiers
+
+Non Access Modifiers
+
+To use a modifier, you include its keyword in the definition of a class, method, or variable. The modifier precedes the rest of the statement, as in the following example.
+
+Example
+public class className {
+   // ...
+}
+
+private boolean myFlag;
+static final double weeks = 9.5;
+protected static final int BOXWIDTH = 42;
+
+public static void main(String[] arguments) {
+   // body of method
+}
+Access Control Modifiers
+Swift provides a number of access modifiers to set access levels for classes, variables, methods and constructors. The four access levels are −
+
+Visible to the package, the default. No modifiers are needed.
+Visible to the class only (private).
+Visible to the world (public).
+Visible to the package and all subclasses (protected).
+Non-Access Modifiers
+Swift provides a number of non-access modifiers to achieve many other functionality.
+
+The static modifier for creating class methods and variables.
+
+The final modifier for finalizing the implementations of classes, methods, and variables.
+
+The abstract modifier for creating abstract classes and methods.
+
+The synchronized and volatile modifiers, which are used for threads.
+
+What is Next?
+In the next section, we will be discussing about Basic Operators used in Swift Language. The chapter will give you an overview of how these operators can be used during application development.
+          </pre>
+      </div>
+
+   <div id="section9" class="sec">
+        <h2>Swift - Basic Operator</h2>
+          <pre>
+          </pre>
+      </div>
+
+      <div id="section10" class="sec">
+        <h2>Swift - Loop Control</h2>
+          <div>Swift is a high-level programming language originally developed by Sun Microsystems and released in 1995. Swift runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Swift. This reference will take you through simple and practical approaches while learning Swift Programming language.</div>
+          <h2>Why to Learn Swift Programming?</h2>
+          <div>Swift is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Swift Programming:
+
+            Object Oriented − In Swift, everything is an Object. Swift can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when Swift is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − Swift is designed to be easy to learn. If you understand the basic concept of OOP Swift, it would be easy to master.
+
+            Secure − With Swift's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − Swift compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Swift runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes Swift portable. Compiler in Swift is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − Swift makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using Swift Programming.</h2>
+          <div>Just to give you a little excitement about Swift programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstSwiftProgram {
+                /* This is my first Swift program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      <div id="section11" class="sec">
+        <h2>Swift - Decision Making</h2>
+          <div>Swift is a high-level programming language originally developed by Sun Microsystems and released in 1995. Swift runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Swift. This reference will take you through simple and practical approaches while learning Swift Programming language.</div>
+          <h2>Why to Learn Swift Programming?</h2>
+          <div>Swift is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Swift Programming:
+
+            Object Oriented − In Swift, everything is an Object. Swift can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when Swift is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − Swift is designed to be easy to learn. If you understand the basic concept of OOP Swift, it would be easy to master.
+
+            Secure − With Swift's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − Swift compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Swift runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes Swift portable. Compiler in Swift is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − Swift makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using Swift Programming.</h2>
+          <div>Just to give you a little excitement about Swift programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstSwiftProgram {
+                /* This is my first Swift program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      <div id="section12" class="sec">
+        <h2>Swift - Character Class</h2>
+          <div>Swift is a high-level programming language originally developed by Sun Microsystems and released in 1995. Swift runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Swift. This reference will take you through simple and practical approaches while learning Swift Programming language.</div>
+          <h2>Why to Learn Swift Programming?</h2>
+          <div>Swift is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Swift Programming:
+
+            Object Oriented − In Swift, everything is an Object. Swift can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when Swift is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − Swift is designed to be easy to learn. If you understand the basic concept of OOP Swift, it would be easy to master.
+
+            Secure − With Swift's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − Swift compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Swift runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes Swift portable. Compiler in Swift is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − Swift makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using Swift Programming.</h2>
+          <div>Just to give you a little excitement about Swift programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstSwiftProgram {
+                /* This is my first Swift program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      <div id="section13" class="sec">
+        <h2>Swift - String Class</h2>
+          <div>Swift is a high-level programming language originally developed by Sun Microsystems and released in 1995. Swift runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Swift. This reference will take you through simple and practical approaches while learning Swift Programming language.</div>
+          <h2>Why to Learn Swift Programming?</h2>
+          <div>Swift is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Swift Programming:
+
+            Object Oriented − In Swift, everything is an Object. Swift can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when Swift is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − Swift is designed to be easy to learn. If you understand the basic concept of OOP Swift, it would be easy to master.
+
+            Secure − With Swift's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − Swift compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Swift runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes Swift portable. Compiler in Swift is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − Swift makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using Swift Programming.</h2>
+          <div>Just to give you a little excitement about Swift programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstSwiftProgram {
+                /* This is my first Swift program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+
+    <div id="section14" class="sec">
+        <h2>Swift - Arrays</h2>
+          <div>Swift is a high-level programming language originally developed by Sun Microsystems and released in 1995. Swift runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Swift. This reference will take you through simple and practical approaches while learning Swift Programming language.</div>
+          <h2>Why to Learn Swift Programming?</h2>
+          <div>Swift is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Swift Programming:
+
+            Object Oriented − In Swift, everything is an Object. Swift can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when Swift is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − Swift is designed to be easy to learn. If you understand the basic concept of OOP Swift, it would be easy to master.
+
+            Secure − With Swift's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − Swift compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Swift runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes Swift portable. Compiler in Swift is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − Swift makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using Swift Programming.</h2>
+          <div>Just to give you a little excitement about Swift programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstSwiftProgram {
+                /* This is my first Swift program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      </div>
+    </div>
+
+</body>
+</html>

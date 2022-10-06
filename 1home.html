@@ -1,0 +1,294 @@
+<!DOCTYPE <html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="coding site">
+		<meta name="keywoords" content="coding, web development">
+		<meta name="robots" content="INDEX, FOLLOW">
+
+		<title>To Create HTML dashboard</title>
+		<link rel="stylesheet" type="text/css" href="1home.css">
+
+		<!-- <link rel="stylesheet" href="header/css/style.css"> -->
+	    <!-- This is just a font that we'll be using. You can remove lines 12-14 if you don't want to use Poppins -->
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+		<!-- <link rel="stylesheet" href="slicknav.css"> -->
+		<link rel="stylesheet" href="2swipeimg.css">
+	   <link rel="stylesheet" href="1search.css">
+	   <link rel="stylesheet" href="3swipetext.css">
+	   <link rel="stylesheet" href="9card.css">
+		<!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="footer1.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+   </head>
+
+		<body>
+			<div class="container">
+				  <!-- Start of the header -->
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <!-- The below line can be an image or a h1, either will work -->
+                    <a href="D:\1 Programming\Project Of College\Sem project\New folder\1home.html"><img src="header/assets/logo1.png" alt="Google logo"></a>
+                    <!-- <h1>My Logo</h1> -->
+                </div>
+            </div>
+
+            <nav>
+                <!-- Each of the below lines look complicated. There is a reason for this markup though!
+                <li> tag will be the container for the table.
+                <span> will be the part that centers the content inside it
+                <a> is the actual clickable part -->
+                <li><span><a href="">home</a></span></li>
+                <li><span><a href="">video</a></span></li>
+                <li><span><a href="">books</a></span></li>
+                <li><span><a href="">forum</a></span></li>
+                <!-- On the line above, remove the class="button" if you don't want the final
+                element to be a button -->
+            </nav>
+        </div>
+    </header>
+    <!-- End of the header -->
+
+			<!-- <div class="dahboard-area">
+				<header>
+					<a href="1home.html" class="logo">CODE GEEK</a>
+              			<ul class="menu">
+              			  <li><a href="1home.html">Home</a></li>
+              			  <li><a href="4dashboard.html">Dashboard</a></li>
+              			  <li><a href="5video.html">Video</a></li>
+              			  <li><a href="6pdf.html">Pdf</a></li>
+              			  <li><a href="D:\1 Programming\Project Of College\Sem project\New folder\books\BookTitles.html">Books</a></li>
+              			  <li><a href="8aboutus.html">About Us</a></li>
+              			</ul>
+				</header> -->
+				</div>
+
+			    <br>
+					<br>
+					<br>
+				<div class="carousel" data-flickity='{ "wrapAround":true, "autoPlay": true }'>
+  					<!-- <link rel="stylesheet" href="2swipeimg.css"> -->
+				  <div id="img1" class="carousel-cell">
+				  	<a href="https://www.infosys.com/careers/hackwithinfy.html" target="_blank"><img src="D:\1 Programming\Project Of College\5th & 6th Sem project\New folder\img2\Frame1.png" alt="img1"></a>
+				  </div>
+				  <div id="img2"class="carousel-cell">
+				  	<a href="https://learning.tcsionhub.in/courses/career-edge-young-professional/" target="_blank"><img src="D:\1 Programming\Project Of College\5th & 6th Sem project\New folder\img2\Frame2.png" alt="img2">
+				  </div></a>
+				  <div id="img3"class="carousel-cell">
+				  <a href="https://aws.amazon.com/training/awsacademy/" target="_blank"><img src="D:\1 Programming\Project Of College\5th & 6th Sem project\New folder\img2\Frame3.png" alt="img3">
+				  </div></a>
+				  <div id="img4"class="carousel-cell">
+				  	<a href="https://grow.google/intl/europe/google-certificates" target="_blank"><img src="D:\1 Programming\Project Of College\5th & 6th Sem project\New folder\img2\Frame4.png" alt="img4"></a>
+				  </div>
+				  <div id="img5"class="carousel-cell">
+				  	<a href="https://codegoda.io/" target="_blank"><img src="D:\1 Programming\Project Of College\5th & 6th Sem project\New folder\img2\Frame5.png" alt="img5"></a>
+				  </div>
+				</div>
+				<br>
+				<div class="boxcontainer">
+					<table class="elementContainer">
+						<tr>
+							<td>
+							<input type="text" placeholder="Search" class="search">
+							</td>
+							<td>
+							<a href="#"><i class="material-icons">search</i></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br>
+				<br>
+				<br>
+
+
+				<div class="carousel2"data-flickity='{ "wrapAround": true }'>
+
+				  <div class="carousel-cell2">
+				  	<p><a href="swipetext\1oops.html"><b>OOPS</b></a></p>
+				  </div>
+				  <div class="carousel-cell2">
+				  	<p><a href="swipetext\2dbms.html"><b>dbms</b></a></p>
+				  </div>
+				  <div class="carousel-cell2">
+				  	<p><a href="swipetext\3python.html"><b>python</b></a></p>
+				  </div>
+				  <div class="carousel-cell2">
+				  	<p><a href="swipetext\4java.html"><b>java</b></a></p>
+				  </div>
+				  <div class="carousel-cell2">
+				  	<p><a href="swipetext\5c++.html"><b>C++</b></a></p>
+				  </div>
+				  <div class="carousel-cell2">
+				  	<p><a href="swipetext\6chash.html"><b>C#</b></a></p>
+				  </div>
+				</div>
+					<br>
+
+		<div class="wrap">
+
+		<a href="cards\1design.html">
+		<div class="card">
+		<img src="img2\img21.jpg" alt="img2.1" style="width:100%">
+		<div class="container">
+		<h4><b>Design</b></h4>
+		</div>
+		</div></a>
+
+		<a href="cards\2androidstudio.html">
+		<div class="card">
+		<img src="img2\img22.jpg" alt="img2.1" style="width:100%">
+		<div class="container">
+		<h4><b>Android Studio</b></h4>
+		</div>
+		</div></a>
+
+		<a href="cards\3webdevelopment.html">
+		<div class="card">
+		<img src="img2\img23.jpg" alt="img2.1" style="width:100%">
+		<div class="container">
+		<h4><b>Web Development</b></h4>
+		</div>
+		</div></a>
+		</div>
+
+		 <br>
+		 <br>
+		 <br>
+
+		<div class="wrap">
+			<a href="cards\4dbms.html">
+			<div class="card">
+			<img src="img2\img24.jpg" alt="img2.1" style="width:100%">
+			<div class="container">
+			<h4><b>DBMS</b></h4>
+		</div>
+		</div></a>
+
+		<a href="cards\5machinelearning.html">
+		<div class="card">
+			<img src="img2\img25.jpg" alt="img2.1" style="width:100%">
+			<div class="container">
+			<h4><b>Machine Learning</b></h4>
+		</div>
+		</div></a>
+
+		<a href="cards\6cybersecurity.html">
+		<div class="card">
+			<img src="img2\img26.jpg" alt="img2.1" style="width:100%">
+			<div class="container">
+			<h4><b>Cyber Security</b></h4>
+		</div>
+		</div></a>
+  </div>
+
+
+
+
+<!-- 	<script>
+		var i=0;
+		for (i = 0; i<10; i++)
+		 {
+			document.write("<br>");
+		}
+	</script> -->
+<br> abcd rdsgdudhjdjdjdj
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	<!-- <div class="foot"> -->
+
+	<!-- </div> -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+				<script src="jquery.slicknav.js"></script>
+				<script>
+					$('.menu').slicknav({
+						'appendTo' : 'header',
+					});
+				</script>
+				<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		</body>
+
+<footer class="footer">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Package</h4>
+  	 			<ul>
+  	 				<li><a href="#">Monthly</a></li>
+  	 				<li><a href="#">Quaterly</a></li>
+  	 				<li><a href="#">Six Months</a></li>
+  	 				<li><a href="#">Year</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+</html>

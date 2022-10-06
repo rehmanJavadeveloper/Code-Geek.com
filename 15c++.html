@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the style for the header -->
+    <link rel="stylesheet" href="10swptxt.css">
+
+    <!-- This is just a font that we'll be using. You can remove lines 12-14 if you don't want to use Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container1">
+    <!-- Start of the header -->
+    <header>
+        <script type="text/javascript">
+            windows.addEventListener("Scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.ScrollY > 0)
+            })
+        </script>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <!-- The below line can be an image or a h1, either will work -->
+                    <a href="index.html"><img src="logo1.png" alt="CODE GEEK"></a>
+                    <!-- <h1>My Logo</h1> -->
+                </div>
+            </div>
+
+            <nav>
+                <!-- Each of the below lines look complicated. There is a reason for this markup though!
+                <li> tag will be the container for the table.
+                <span> will be the part that centers the content inside it
+                <a> is the actual clickable part -->
+                <li><span><a href="index.html">home</a></span></li>
+                <li><span><a href="5video.html">video</a></span></li>
+                <li><span><a href="7books.html">books</a></span></li>
+                <li><span><a href="https://www.jdoodle.com/online-compiler-c++">compiler</a></span></li>
+                <!-- On the line above, remove the class="button" if you don't want the final
+                element to be a button -->
+            </nav>
+        </div>
+    </header>
+    <!-- End of the header --> 
+    </div>
+
+    <div class="wrapper">
+    <div class="sidebar">
+        <h2>C++</h2>
+        <ul>
+            <li><a href="#section0">C++ - Home</a></li>
+            <li><a href="#section1">C++ - Overview</a></li>
+            <li><a href="#section2">C++ - Environment Setup</a></li>
+            <li><a href="#section3">C++ - Basic Syntax</a></li>
+            <li><a href="#section4">C++ - Object and Classes</a></li>
+            <li><a href="#section5">C++ - Constructors</a></li>
+            <li><a href="#section6">C++ - Basic Datatypes</a></li>
+            <li><a href="#section7">C++ - Variable Types</a></li>
+            <li><a href="#section8">C++ - Modifier Types</a></li>
+            <li><a href="#section9">C++ - Basic Operators</a></li>
+            <li><a href="#section10">C++ - Loop Control</a></li>
+            <li><a href="#section11">C++ - Decision Making</a></li>
+            <li><a href="#section12">C++ - Character Class</a></li>
+            <li><a href="#section13">C++ - Strings Class</a></li>
+            <li><a href="#section14">C++ - Arrays</a></li>
+        </ul> 
+    </div>
+    </div>
+
+    <div class="main_content">
+        <div class="header">Welcome!! To C++.</div>  
+        <div class="info">
+        <div id="section0">
+          <pre>
+            C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of 
+            platforms, such as Windows, Mac OS, and the various versions of UNIX. This C++ tutorial adopts a simple and practical approach 
+            to describe the concepts of C++ for beginners to advanded software engineers.
+
+            Why to Learn C++
+            C++ is a MUST for students and working professionals to become a great Software Engineer. I will list down some of the key advantages
+             of learning C++:
+
+            C++ is very close to hardware, so you get a chance to work at a low level which gives you lot of control in terms of memory management, 
+            better performance and finally a robust software development.
+
+            C++ programming gives you a clear understanding about Object Oriented Programming. You will understand low level implementation of 
+            polymorphism when you will implement virtual tables and virtual table pointers, or dynamic type identification.
+
+            C++ is one of the every green programming languages and loved by millions of software developers. If you are a great C++ programmer 
+            then you will never sit without work and more importantly you will get highly paid for your work.
+
+            C++ is the most widely used programming languages in application and system programming. So you can choose your area of interest of 
+            software development.
+
+            C++ really teaches you the difference between compiler, linker and loader, different data types, storage classes, variable types their 
+            scopes etc.
+
+            There are 1000s of good reasons to learn C++ Programming. But one thing for sure, to learn any programming language, not only C++, you 
+            just need to code, and code and finally code until you become expert.
+
+            Hello World using C++
+            Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C++ Hello World program, You 
+            can try it using Demo link
+
+            C++ is a super set of C programming with additional implementation of object-oriented concepts.
+          </pre>
+          <div>
+            <pre>
+            Applications of C++ Programming
+            The latest release of the C++ Standard Edition is C++ SE 8. With the advancement of C++ and its widespread popularity, multiple 
+            configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
+
+            The new J2 versions were renamed as C++ SE, C++ EE, and C++ ME respectively. C++ is guaranteed to be Write Once, Run Anywhere.
+
+            Multithreaded − With C++'s multithreaded feature it is possible to write programs that can perform many tasks simultaneously. 
+            This design feature allows the developers to construct interactive applications that can run smoothly.
+
+            Interpreted − C++ byte code is translated on the fly to native machine instructions and is not stored anywhere. 
+            The development process is more rapid and analytical since the linking is an incremental and light-weight process.
+
+            High Performance − With the use of Just-In-Time compilers, C++ enables high performance.
+
+            Distributed − C++ is designed for the distributed environment of the internet.
+
+            Dynamic − C++ is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. 
+            C++ programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+
+            Audience
+            This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to C++ Programming language.  
+            </pre>
+          </div>
+      </div>
+
+        <div id="section1" class="sec">
+        <div>
+        <h2>C++ - Overview</h2>
+        <pre>    
+        C++ programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 
+        as core component of Sun Microsystems' C++ platform (C++ 1.0 [J2SE]).
+
+        The latest release of the C++ Standard Edition is C++ SE 8. With the advancement of C++ and its widespread popularity, multiple 
+        configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
+
+        The new J2 versions were renamed as C++ SE, C++ EE, and C++ ME respectively. C++ is guaranteed to be Write Once, Run Anywhere.
+
+        C++ is −
+
+        Object Oriented − In C++, everything is an Object. C++ can be easily extended since it is based on the Object model.
+
+        Platform Independent − Unlike many other programming languages including C and C++, when C++ is compiled, it is not compiled into 
+        platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted
+        by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+        Simple − C++ is designed to be easy to learn. If you understand the basic concept of OOP C++, it would be easy to master.
+
+        Secure − With C++'s secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are 
+        based on public-key encryption.
+
+        Architecture-neutral − C++ compiler generates an architecture-neutral object file format, which makes the compiled code executable 
+        on many processors, with the presence of C++ runtime system.
+
+        Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes C++ portable. 
+        Compiler in C++ is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+        Robust − C++ makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
+
+        Multithreaded − With C++'s multithreaded feature it is possible to write programs that can perform many tasks simultaneously. 
+        This design feature allows the developers to construct interactive applications that can run smoothly.
+
+        Interpreted − C++ byte code is translated on the fly to native machine instructions and is not stored anywhere. T
+        he development process is more rapid and analytical since the linking is an incremental and light-weight process.
+
+        High Performance − With the use of Just-In-Time compilers, C++ enables high performance.
+
+        Distributed − C++ is designed for the distributed environment of the internet.
+
+        Dynamic − C++ is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. 
+        C++ programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+
+        History of C++
+        James Gosling initiated C++ language project in June 1991 for use in one of his many set-top box projects.
+         The language, initially called ‘Oak’ after an oak tree that stood outside Gosling's office, also went by the name ‘Green’ and 
+         ended up later being renamed as C++, from a list of random words.
+
+        Sun released the first public implementation as C++ 1.0 in 1995. It promised Write Once, Run Anywhere (WORA), providing no-cost 
+        run-times on popular platforms.
+
+        On 13 November, 2006, Sun released much of C++ as free and open source software under the terms of the GNU General Public License (GPL).
+
+        On 8 May, 2007, Sun finished the process, making all of C++'s core code free and open-source, aside from a small portion of code 
+        to which Sun did not hold the copyright.
+
+        Tools You Will Need
+        For performing the examples discussed in this tutorial, you will need a Pentium 200-MHz computer with a minimum of 64 MB of RAM 
+        (128 MB of RAM recommended).
+
+        You will also need the following softwares −
+
+        Linux 7.1 or Windows xp/7/8 operating system
+        C++ JDK 8
+        Microsoft Notepad or any other text editor
+        This tutorial will provide the necessary skills to create GUI, networking, and web applications using C++.
+
+        What is Next?
+        The next chapter will guide you to how you can obtain C++ and its documentation. Finally, it instructs you on how to install 
+        C++ and prepare an environment to develop C++ applications.
+        </pre>
+        </div>
+
+
+       <div id="section2" class="sec"> 
+      <div>
+        <h2>C++ - Environment Setup</h2>
+      <pre>
+    In this chapter, we will discuss on the different aspects of setting up a congenial environment for C++.
+
+    Local Environment Setup
+    If you are still willing to set up your environment for C++ programming language, then this section guides you on how to download and 
+    set up C++ on your machine. Following are the steps to set up the environment.
+
+    C++ SE is freely available from the link Download C++. You can download a version based on your operating system.
+
+    Follow the instructions to download C++ and run the .exe to install C++ on your machine. Once you installed C++ on your machine, you will 
+    need to set environment variables to point to correct installation directories −
+
+    Setting Up the Path for Windows
+    Assuming you have installed C++ in c:\Program Files\C++\jdk directory −
+
+    Right-click on 'My Computer' and select 'Properties'.
+
+    Click the 'Environment variables' button under the 'Advanced' tab.
+
+    Now, alter the 'Path' variable so that it also contains the path to the C++ executable. Example, if the path is currently set to 'C:\WINDOWS\SYSTEM32', 
+    then change your path to read 'C:\WINDOWS\SYSTEM32;c:\Program Files\C++\jdk\bin'.
+
+    Setting Up the Path for Linux, UNIX, Solaris, FreeBSD
+    Environment variable PATH should be set to point to where the C++ binaries have been installed. Refer to your shell documentation, if you have 
+    trouble doing this.
+
+    Example, if you use bash as your shell, then you would add the following line to the end of your '.bashrc: export PATH = /path/to/C++:$PATH'
+
+    Popular C++ Editors
+    To write your C++ programs, you will need a text editor. There are even more sophisticated IDEs available in the market. But for now, 
+    you can consider one of the following −
+
+    Notepad − On Windows machine, you can use any simple text editor like Notepad (Recommended for this tutorial), TextPad.
+
+    Netbeans − A C++ IDE that is open-source and free which can be downloaded from https://www.netbeans.org/index.html.
+
+    Eclipse − A C++ IDE developed by the eclipse open-source community and can be downloaded from https://www.eclipse.org/.
+
+    What is Next?
+    Next chapter will teach you how to write and run your first C++ program and some of the important basic syntaxes in C++ needed for 
+    developing applications.     
+      </pre>
+      </div>
+
+        <div id="section3" class="sec">
+        <h2>C++ - Basic Syntax</h2>
+        <pre>
+            When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking each other's methods. 
+            Let us now briefly look into what do class, object, methods, and instance variables mean.
+
+        Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, 
+        barking, eating. An object is an instance of a class.
+
+        Class − A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.
+
+        Methods − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated 
+        and all the actions are executed.
+
+        Instance Variables − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance 
+        variables.
+
+        First C++ Program
+        Let us look at a simple code that will print the words Hello World.   
+
+        Example
+Live Demo
+public class MyFirstC++Program {
+
+   /* This is my first C++ program.
+    * This will print 'Hello World' as the output
+    */
+
+   public static void main(String []args) {
+      System.out.println("Hello World"); // prints Hello World
+   }
+}
+Let's look at how to save the file, compile, and run the program. Please follow the subsequent steps −
+
+Open notepad and add the code as above.
+
+Save the file as: MyFirstC++Program.C++.
+
+Open a command prompt window and go to the directory where you saved the class. Assume it's C:\.
+
+Type 'C++c MyFirstC++Program.C++' and press enter to compile your code. If there are no errors in your code, the command prompt will take you to the next line (Assumption : The path variable is set).
+
+Now, type ' C++ MyFirstC++Program ' to run your program.
+
+You will be able to see ' Hello World ' printed on the window.
+
+Output
+C:\> C++c MyFirstC++Program.C++
+C:\> C++ MyFirstC++Program 
+Hello World
+Basic Syntax
+About C++ programs, it is very important to keep in mind the following points.
+
+Case Sensitivity − C++ is case sensitive, which means identifier Hello and hello would have different meaning in C++.
+
+Class Names − For all class names the first letter should be in Upper Case. If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.
+
+Example: class MyFirstC++Class
+
+Method Names − All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case.
+
+Example: public void myMethodName()
+
+Program File Name − Name of the program file should exactly match the class name.
+
+When saving the file, you should save it using the class name (Remember C++ is case sensitive) and append '.C++' to the end of the name (if the file name and the class name do not match, your program will not compile).
+
+But please make a note that in case you do not have a public class present in the file then file name can be different than class name. It is also not mandatory to have a public class in the file.
+
+Example: Assume 'MyFirstC++Program' is the class name. Then the file should be saved as 'MyFirstC++Program.C++'
+
+public static void main(String args[]) − C++ program processing starts from the main() method which is a mandatory part of every C++ program.
+
+C++ Identifiers
+All C++ components require names. Names used for classes, variables, and methods are called identifiers.
+
+In C++, there are several points to remember about identifiers. They are as follows −
+
+All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).
+
+After the first character, identifiers can have any combination of characters.
+
+A key word cannot be used as an identifier.
+
+Most importantly, identifiers are case sensitive.
+
+Examples of legal identifiers: age, $salary, _value, __1_value.
+
+Examples of illegal identifiers: 123abc, -salary.
+
+C++ Modifiers
+Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers −
+
+Access Modifiers − default, public , protected, private
+
+Non-access Modifiers − final, abstract, strictfp
+
+We will be looking into more details about modifiers in the next section.
+
+C++ Variables
+Following are the types of variables in C++ −
+
+Local Variables
+Class Variables (Static Variables)
+Instance Variables (Non-static Variables)
+C++ Arrays
+Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap. We will look into how to declare, construct, and initialize in the upcoming chapters.
+
+C++ Enums
+Enums were introduced in C++ 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.
+
+With the use of enums it is possible to reduce the number of bugs in your code.
+
+For example, if we consider an application for a fresh juice shop, it would be possible to restrict the glass size to small, medium, and large. This would make sure that it would not allow anyone to order any size other than small, medium, or large.
+
+Example
+Live Demo
+class FreshJuice {
+   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   FreshJuiceSize size;
+}
+
+public class FreshJuiceTest {
+
+   public static void main(String args[]) {
+      FreshJuice juice = new FreshJuice();
+      juice.size = FreshJuice.FreshJuiceSize.MEDIUM ;
+      System.out.println("Size: " + juice.size);
+   }
+}
+The above example will produce the following result −
+
+Output
+Size: MEDIUM
+Note − Enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
+
+C++ Keywords
+The following list shows the reserved words in C++. These reserved words may not be used as constant or variable or any other identifier names.
+
+abstract    assert  boolean break
+byte    case    catch   char
+class   const   continue    default
+do  double  else    enum
+extends final   finally float
+for goto    if  implements
+import  instanceof  int interface
+long    native  new package
+private protected   public  return
+short   static  strictfp    super
+switch  synchronized    this    throw
+throws  transient   try void
+volatile    while       
+Comments in C++
+C++ supports single-line and multi-line comments very similar to C and C++. All characters available inside any comment are ignored by C++ compiler.
+
+Example
+Live Demo
+public class MyFirstC++Program {
+    ublic class MyFirstC++Program {
+
+   /* This is my first C++ program.
+    * This will print 'Hello World' as the output
+    * This is an example of multi-line comments.
+    */
+
+   public static void main(String []args) {
+      // This is an example of single line comment
+      /* This is also an example of single line comment. */
+      System.out.println("Hello World");
+   }
+}
+Output
+Hello World
+Using Blank Lines
+A line containing only white space, possibly with a comment, is known as a blank line, and C++ totally ignores it.
+
+Inheritance
+In C++, classes can be derived from classes. Basically, if you need to create a new class and here is already a class that has some of the code you require, then it is possible to derive your new class from the already existing code.
+
+This concept allows you to reuse the fields and methods of the existing class without having to rewrite the code in a new class. In this scenario, the existing class is called the superclass and the derived class is called the subclass.
+
+Interfaces
+In C++ language, an interface can be defined as a contract between objects on how to communicate with each other. Interfaces play a vital role when it comes to the concept of inheritance.
+
+An interface defines the methods, a deriving class (subclass) should use. But the implementation of the methods is totally up to the subclass.
+
+What is Next?
+The next section explains about Objects and classes in C++ programming. At the end of the session, you will be able to get a clear picture as to what are objects and what are classes in C++.
+
+        </pre>
+        </div>
+
+        <div id="section4" class="sec">
+            <h2>C++ - Object and Classes</h2>
+          <div>C++ is a high-level programming language originally developed by Sun Microsystems and released in 1995. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of C++. This reference will take you through simple and practical approaches while learning C++ Programming language.</div>
+          <h2>Why to Learn C++ Programming?</h2>
+          <div>C++ is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C++ Programming:
+
+            Object Oriented − In C++, everything is an Object. C++ can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when C++ is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − C++ is designed to be easy to learn. If you understand the basic concept of OOP C++, it would be easy to master.
+
+            Secure − With C++'s secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − C++ compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of C++ runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes C++ portable. Compiler in C++ is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − C++ makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using C++ Programming.</h2>
+          <div>Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstC++Program {
+                /* This is my first C++ program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+            </div>
+
+            <div id="section5" class="sec">
+                <h2>C++ - Constructors</h2>
+          <div>C++ is a high-level programming language originally developed by Sun Microsystems and released in 1995. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of C++. This reference will take you through simple and practical approaches while learning C++ Programming language.</div>
+          <h2>Why to Learn C++ Programming?</h2>
+          <div>C++ is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C++ Programming:
+
+            Object Oriented − In C++, everything is an Object. C++ can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when C++ is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − C++ is designed to be easy to learn. If you understand the basic concept of OOP C++, it would be easy to master.
+
+            Secure − With C++'s secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − C++ compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of C++ runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes C++ portable. Compiler in C++ is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − C++ makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using C++ Programming.</h2>
+          <div>Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstC++Program {
+                /* This is my first C++ program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+         </div>
+        <div id="section6" class="sec">
+             <h2>C++ - Basic Datatypes</h2>
+          <div>C++ is a high-level programming language originally developed by Sun Microsystems and released in 1995. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of C++. This reference will take you through simple and practical approaches while learning C++ Programming language.</div>
+          <h2>Why to Learn C++ Programming?</h2>
+          <div>C++ is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C++ Programming:
+
+            Object Oriented − In C++, everything is an Object. C++ can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when C++ is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − C++ is designed to be easy to learn. If you understand the basic concept of OOP C++, it would be easy to master.
+
+            Secure − With C++'s secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − C++ compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of C++ runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes C++ portable. Compiler in C++ is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − C++ makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using C++ Programming.</h2>
+          <div>Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstC++Program {
+                /* This is my first C++ program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+        </div>
+
+        <div id="section7" class="sec">
+            <h2>C++ - Variable Types </h2>
+          <div>C++ is a high-level programming language originally developed by Sun Microsystems and released in 1995. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of C++. This reference will take you through simple and practical approaches while learning C++ Programming language.</div>
+          <h2>Why to Learn C++ Programming?</h2>
+          <div>C++ is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C++ Programming:
+
+            Object Oriented − In C++, everything is an Object. C++ can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when C++ is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − C++ is designed to be easy to learn. If you understand the basic concept of OOP C++, it would be easy to master.
+
+            Secure − With C++'s secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − C++ compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of C++ runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes C++ portable. Compiler in C++ is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − C++ makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using C++ Programming.</h2>
+          <div>Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstC++Program {
+                /* This is my first C++ program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+      <div id="section8" class="sec">
+        <h2>C++ - Modifier Types</h2>
+          <div>C++ is a high-level programming language originally developed by Sun Microsystems and released in 1995. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of C++. This reference will take you through simple and practical approaches while learning C++ Programming language.</div>
+          <h2>Why to Learn C++ Programming?</h2>
+          <div>C++ is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C++ Programming:
+
+            Object Oriented − In C++, everything is an Object. C++ can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when C++ is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − C++ is designed to be easy to learn. If you understand the basic concept of OOP C++, it would be easy to master.
+
+            Secure − With C++'s secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − C++ compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of C++ runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes C++ portable. Compiler in C++ is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − C++ makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using C++ Programming.</h2>
+          <div>Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstC++Program {
+                /* This is my first C++ program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+
+    <div id="section14" class="sec">
+        <h2>C++ - Arrays</h2>
+          <div>C++ is a high-level programming language originally developed by Sun Microsystems and released in 1995. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of C++. This reference will take you through simple and practical approaches while learning C++ Programming language.</div>
+          <h2>Why to Learn C++ Programming?</h2>
+          <div>C++ is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C++ Programming:
+
+            Object Oriented − In C++, everything is an Object. C++ can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when C++ is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − C++ is designed to be easy to learn. If you understand the basic concept of OOP C++, it would be easy to master.
+
+            Secure − With C++'s secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − C++ compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of C++ runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes C++ portable. Compiler in C++ is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − C++ makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using C++ Programming.</h2>
+          <div>Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstC++Program {
+                /* This is my first C++ program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      </div>
+    </div>
+
+</body>
+</html>

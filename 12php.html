@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the style for the header -->
+    <link rel="stylesheet" href="10swptxt.css">
+
+    <!-- This is just a font that we'll be using. You can remove lines 12-14 if you don't want to use Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container1">
+    <!-- Start of the header -->
+    <header>
+        <script type="text/javascript">
+            windows.addEventListener("Scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.ScrollY > 0)
+            })
+        </script>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <!-- The below line can be an image or a h1, either will work -->
+                    <a href="index.html"><img src="logo1.png" alt="CODE GEEK"></a>
+                    <!-- <h1>My Logo</h1> -->
+                </div>
+            </div>
+
+            <nav>
+                <!-- Each of the below lines look complicated. There is a reason for this markup though!
+                <li> tag will be the container for the table.
+                <span> will be the part that centers the content inside it
+                <a> is the actual clickable part -->
+                <li><span><a href="index.html">home</a></span></li>
+                <li><span><a href="5video.html">video</a></span></li>
+                <li><span><a href="7books.html">books</a></span></li>
+                <li><span><a href="https://www.jdoodle.com/php-online-editor">compiler</a></span></li>
+                <!-- On the line above, remove the class="button" if you don't want the final
+                element to be a button -->
+            </nav>
+        </div>
+    </header>
+    <!-- End of the header --> 
+    </div>
+
+    <div class="wrapper">
+    <div class="sidebar">
+        <h2>PHP</h2>
+        <ul>
+            <li><a href="#section0">PHP - Home</a></li>
+            <li><a href="#section1">PHP - Introduction</a></li>
+            <li><a href="#section2">PHP - Environment Setup</a></li>
+            <li><a href="#section3">PHP - Syntax Overview</a></li>
+            <li><a href="#section4">PHP - Object and Classes</a></li>
+            <li><a href="#section5">PHP - Constructors</a></li>
+            <li><a href="#section6">PHP - Basic Datatypes</a></li>
+            <li><a href="#section7">PHP - Variable Types</a></li>
+            <li><a href="#section8">PHP - Modifier Types</a></li>
+            <li><a href="#section9">PHP - Basic Operators</a></li>
+            <li><a href="#section10">PHP - Loop Control</a></li>
+            <li><a href="#section11">PHP - Decision Making</a></li>
+            <li><a href="#section12">PHP - Character Class</a></li>
+            <li><a href="#section13">PHP - Strings Class</a></li>
+            <li><a href="#section14">PHP - Arrays</a></li>
+        </ul> 
+    </div>
+    </div>
+
+    <div class="main_content">
+        <div class="header">Welcome!! To PHP.</div>  
+        <div class="info">
+        <div id="section0">
+            <pre>
+            The PHP Hypertext Preprocessor (PHP) is a programming language that allows web developers to create dynamic content that interacts with databases. PHP is basically used for developing web based software applications. This tutorial helps you to build your base with PHP.
+
+            Why to Learn PHP?
+            PHP started out as a small open source project that evolved as more and more people found out how useful it was. Rasmus Lerdorf unleashed the first version of PHP way back in 1994.
+
+            PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning PHP:
+
+            PHP is a recursive acronym for "PHP: Hypertext Preprocessor".
+
+            PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
+
+            It is integrated with a number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.
+
+            PHP is pleasingly zippy in its execution, especially when compiled as an Apache module on the Unix side. The MySQL server, once started, executes even very complex queries with huge result sets in record-setting time.
+
+            PHP supports a large number of major protocols such as POP3, IMAP, and LDAP. PHP4 added support for Java and distributed object architectures (COM and CORBA), making n-tier development a possibility for the first time.
+
+            PHP is forgiving: PHP language tries to be as forgiving as possible.
+
+            PHP Syntax is C-Like.
+
+            Characteristics of PHP
+            Five important characteristics make PHP's practical nature possible −
+
+            Simplicity
+            Efficiency
+            Security
+            Flexibility
+            Familiarity
+            Hello World using PHP.
+            Just to give you a little excitement about PHP, I'm going to give you a small conventional PHP Hello World program, 
+            You can try it using Demo link.
+            <img src="img2/img31.png" alt="img31">
+            Applications of PHP
+            As mentioned before, PHP is one of the most widely used language over the web. I'm going to list few of them here:
+            PHP performs system functions, i.e. from files on a system it can create, open, read, write, and close them.
+
+            PHP can handle forms, i.e. gather data from files, save data to a file, through email you can send data, return data to the user.
+
+            You add, delete, modify elements within your database through PHP.
+
+            Access cookies variables and set cookies.
+
+            Using PHP, you can restrict users to access some pages of your website.
+
+            It can encrypt data.
+            </pre>
+            </div>
+
+        <div id="section1" class="sec">
+        <div>
+        <h2>PHP - Introduction</h2>
+        <pre>    
+        PHP started out as a small open source project that evolved as more and more people found out how useful it was. Rasmus Lerdorf unleashed the first version of PHP way back in 1994.
+
+        PHP is a recursive acronym for "PHP: Hypertext Preprocessor".
+
+        PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
+
+        It is integrated with a number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.
+
+        PHP is pleasingly zippy in its execution, especially when compiled as an Apache module on the Unix side. The MySQL server, once started, executes even very complex queries with huge result sets in record-setting time.
+
+        PHP supports a large number of major protocols such as POP3, IMAP, and LDAP. PHP4 added support for Java and distributed object architectures (COM and CORBA), making n-tier development a possibility for the first time.
+
+        PHP is forgiving: PHP language tries to be as forgiving as possible.
+
+        PHP Syntax is C-Like.
+        Common uses of PHP
+        PHP performs system functions, i.e. from files on a system it can create, open, read, write, and close them.
+
+        PHP can handle forms, i.e. gather data from files, save data to a file, through email you can send data, return data to the user.
+
+        You add, delete, modify elements within your database through PHP.
+
+        Access cookies variables and set cookies.
+
+        Using PHP, you can restrict users to access some pages of your website.
+
+It can encrypt data.
+        </pre>
+        </div>
+
+
+       <div id="section2" class="sec"> 
+      <div>
+        <h2>PHP - Environment Setup</h2>
+      <pre>
+    In this chapter, we will discuss on the different aspects of setting up a congenial environment for PHP.
+
+    Local Environment Setup
+    If you are still willing to set up your environment for PHP programming language, then this section guides you on how to download and 
+    set up PHP on your machine. Following are the steps to set up the environment.
+
+    PHP SE is freely available from the link Download PHP. You can download a version based on your operating system.
+
+    Follow the instructions to download PHP and run the .exe to install PHP on your machine. Once you installed PHP on your machine, you will 
+    need to set environment variables to point to correct installation directories −
+
+    Setting Up the Path for Windows
+    Assuming you have installed PHP in c:\Program Files\PHP\jdk directory −
+
+    Right-click on 'My Computer' and select 'Properties'.
+
+    Click the 'Environment variables' button under the 'Advanced' tab.
+
+    Now, alter the 'Path' variable so that it also contains the path to the PHP executable. Example, if the path is currently set to 'C:\WINDOWS\SYSTEM32', 
+    then change your path to read 'C:\WINDOWS\SYSTEM32;c:\Program Files\PHP\jdk\bin'.
+
+    Setting Up the Path for Linux, UNIX, Solaris, FreeBSD
+    Environment variable PATH should be set to point to where the PHP binaries have been installed. Refer to your shell documentation, if you have 
+    trouble doing this.
+
+    Example, if you use bash as your shell, then you would add the following line to the end of your '.bashrc: export PATH = /path/to/PHP:$PATH'
+
+    Popular PHP Editors
+    To write your PHP programs, you will need a text editor. There are even more sophisticated IDEs available in the market. But for now, 
+    you can consider one of the following −
+
+    Notepad − On Windows machine, you can use any simple text editor like Notepad (Recommended for this tutorial), TextPad.
+
+    Netbeans − A PHP IDE that is open-source and free which can be downloaded from https://www.netbeans.org/index.html.
+
+    Eclipse − A PHP IDE developed by the eclipse open-source community and can be downloaded from https://www.eclipse.org/.
+
+    What is Next?
+    Next chapter will teach you how to write and run your first PHP program and some of the important Syntax Overviewes in PHP needed for 
+    developing applications.     
+      </pre>
+      </div>
+
+        <div id="section3" class="sec">
+        <h2>PHP - Syntax Overview</h2>
+        <pre>
+            When we consider a PHP program, it can be defined as a collection of objects that communicate via invoking each other's methods. 
+            Let us now briefly look into what do class, object, methods, and instance variables mean.
+
+        Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, 
+        barking, eating. An object is an instance of a class.
+
+        Class − A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.
+
+        Methods − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated 
+        and all the actions are executed.
+
+        Instance Variables − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance 
+        variables.
+
+        First PHP Program
+        Let us look at a simple code that will print the words Hello World.   
+
+        Example
+Live Demo
+public class MyFirstPHPProgram {
+
+   /* This is my first PHP program.
+    * This will print 'Hello World' as the output
+    */
+
+   public static void main(String []args) {
+      System.out.println("Hello World"); // prints Hello World
+   }
+}
+Let's look at how to save the file, compile, and run the program. Please follow the subsequent steps −
+
+Open notepad and add the code as above.
+
+Save the file as: MyFirstPHPProgram.PHP.
+
+Open a command prompt window and go to the directory where you saved the class. Assume it's C:\.
+
+Type 'PHPc MyFirstPHPProgram.PHP' and press enter to compile your code. If there are no errors in your code, the command prompt will take you to the next line (Assumption : The path variable is set).
+
+Now, type ' PHP MyFirstPHPProgram ' to run your program.
+
+You will be able to see ' Hello World ' printed on the window.
+
+Output
+C:\> PHPc MyFirstPHPProgram.PHP
+C:\> PHP MyFirstPHPProgram 
+Hello World
+Syntax Overview
+About PHP programs, it is very important to keep in mind the following points.
+
+Case Sensitivity − PHP is case sensitive, which means identifier Hello and hello would have different meaning in PHP.
+
+Class Names − For all class names the first letter should be in Upper Case. If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.
+
+Example: class MyFirstPHPClass
+
+Method Names − All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case.
+
+Example: public void myMethodName()
+
+Program File Name − Name of the program file should exactly match the class name.
+
+When saving the file, you should save it using the class name (Remember PHP is case sensitive) and append '.PHP' to the end of the name (if the file name and the class name do not match, your program will not compile).
+
+But please make a note that in case you do not have a public class present in the file then file name can be different than class name. It is also not mandatory to have a public class in the file.
+
+Example: Assume 'MyFirstPHPProgram' is the class name. Then the file should be saved as 'MyFirstPHPProgram.PHP'
+
+public static void main(String args[]) − PHP program processing starts from the main() method which is a mandatory part of every PHP program.
+
+PHP Identifiers
+All PHP components require names. Names used for classes, variables, and methods are called identifiers.
+
+In PHP, there are several points to remember about identifiers. They are as follows −
+
+All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).
+
+After the first character, identifiers can have any combination of characters.
+
+A key word cannot be used as an identifier.
+
+Most importantly, identifiers are case sensitive.
+
+Examples of legal identifiers: age, $salary, _value, __1_value.
+
+Examples of illegal identifiers: 123abc, -salary.
+
+PHP Modifiers
+Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers −
+
+Access Modifiers − default, public , protected, private
+
+Non-access Modifiers − final, abstract, strictfp
+
+We will be looking into more details about modifiers in the next section.
+
+PHP Variables
+Following are the types of variables in PHP −
+
+Local Variables
+Class Variables (Static Variables)
+Instance Variables (Non-static Variables)
+PHP Arrays
+Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap. We will look into how to declare, construct, and initialize in the upcoming chapters.
+
+PHP Enums
+Enums were introduced in PHP 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.
+
+With the use of enums it is possible to reduce the number of bugs in your code.
+
+For example, if we consider an application for a fresh juice shop, it would be possible to restrict the glass size to small, medium, and large. This would make sure that it would not allow anyone to order any size other than small, medium, or large.
+
+Example
+Live Demo
+class FreshJuice {
+   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   FreshJuiceSize size;
+}
+
+public class FreshJuiceTest {
+
+   public static void main(String args[]) {
+      FreshJuice juice = new FreshJuice();
+      juice.size = FreshJuice.FreshJuiceSize.MEDIUM ;
+      System.out.println("Size: " + juice.size);
+   }
+}
+The above example will produce the following result −
+
+Output
+Size: MEDIUM
+Note − Enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
+
+PHP Keywords
+The following list shows the reserved words in PHP. These reserved words may not be used as constant or variable or any other identifier names.
+
+abstract    assert  boolean break
+byte    case    catch   char
+class   const   continue    default
+do  double  else    enum
+extends final   finally float
+for goto    if  implements
+import  instanceof  int interface
+long    native  new package
+private protected   public  return
+short   static  strictfp    super
+switch  synchronized    this    throw
+throws  transient   try void
+volatile    while       
+Comments in PHP
+PHP supports single-line and multi-line comments very similar to C and C++. All characters available inside any comment are ignored by PHP compiler.
+
+Example
+Live Demo
+public class MyFirstPHPProgram {
+    ublic class MyFirstPHPProgram {
+
+   /* This is my first PHP program.
+    * This will print 'Hello World' as the output
+    * This is an example of multi-line comments.
+    */
+
+   public static void main(String []args) {
+      // This is an example of single line comment
+      /* This is also an example of single line comment. */
+      System.out.println("Hello World");
+   }
+}
+Output
+Hello World
+Using Blank Lines
+A line containing only white space, possibly with a comment, is known as a blank line, and PHP totally ignores it.
+
+Inheritance
+In PHP, classes can be derived from classes. Basically, if you need to create a new class and here is already a class that has some of the code you require, then it is possible to derive your new class from the already existing code.
+
+This concept allows you to reuse the fields and methods of the existing class without having to rewrite the code in a new class. In this scenario, the existing class is called the superclass and the derived class is called the subclass.
+
+Interfaces
+In PHP language, an interface can be defined as a contract between objects on how to communicate with each other. Interfaces play a vital role when it comes to the concept of inheritance.
+
+An interface defines the methods, a deriving class (subclass) should use. But the implementation of the methods is totally up to the subclass.
+
+What is Next?
+The next section explains about Objects and classes in PHP programming. At the end of the session, you will be able to get a clear picture as to what are objects and what are classes in PHP.
+
+        </pre>
+        </div>
+
+        <div id="section4" class="sec">
+            <h2>PHP - Object and Classes</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+            </div>
+
+            <div id="section5" class="sec">
+                <h2>PHP - Constructors</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+         </div>
+        <div id="section6" class="sec">
+             <h2>PHP - Basic Datatypes</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+        </div>
+
+        <div id="section7" class="sec">
+            <h2>PHP - Variable Types </h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+      <div id="section8" class="sec">
+        <h2>PHP - Modifier Types</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+    <div id="section9" class="sec">
+        <h2>PHP - Modifier Types</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      <div id="section10" class="sec">
+        <h2>PHP - Modifier Types</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      <div id="section11" class="sec">
+        <h2>PHP - Modifier Types</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      <div id="section12" class="sec">
+        <h2>PHP - Modifier Types</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      <div id="section13" class="sec">
+        <h2>PHP - Modifier Types</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+    <div id="section14" class="sec">
+        <h2>PHP - Arrays</h2>
+          <div>PHP is a high-level programming language originally developed by Sun Microsystems and released in 1995. PHP runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of PHP. This reference will take you through simple and practical approaches while learning PHP Programming language.</div>
+          <h2>Why to Learn PHP Programming?</h2>
+          <div>PHP is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning PHP Programming:
+
+            Object Oriented − In PHP, everything is an Object. PHP can be easily extended since it is based on the Object model.
+
+            Platform Independent − Unlike many other programming languages including C and C++, when PHP is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+
+            Simple − PHP is designed to be easy to learn. If you understand the basic concept of OOP PHP, it would be easy to master.
+
+            Secure − With PHP's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+
+            Architecture-neutral − PHP compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of PHP runtime system.
+
+            Portable − Being architecture-neutral and having no implementation dependent aspects of the specification makes PHP portable. Compiler in PHP is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+
+            Robust − PHP makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</div>
+            <h2>Hello World using PHP Programming.</h2>
+          <div>Just to give you a little excitement about PHP programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</div>
+          <pre>
+              public class MyFirstPHPProgram {
+                /* This is my first PHP program.
+                * This will print 'Hello World' as the output
+                */
+
+               public static void main(String []args) {
+                  System.out.println("Hello World"); // prints Hello World
+               }
+            }
+          </pre>
+      </div>
+
+      </div>
+    </div>
+
+</body>
+</html>

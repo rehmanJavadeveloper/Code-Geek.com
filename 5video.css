@@ -1,0 +1,151 @@
+/* Default styles for the browser */
+
+/*Header*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+    font-family: 'Poppins';
+}
+
+header .inner{
+    width: 1300px; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo img{
+    height: 90px;
+    margin-top: 5px; /* Optical alignment of the logo */
+}
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: #BD1616;
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+header nav .button{
+    background-color: #1ab26b; /* This HEX is the color of the button */
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+.container1{
+    background-color: #F8F0DF;
+}
+
+
+
+
+/*video*/
+:root{
+    --maroon: #ff6666;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .container2 .heading{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color: var(--maroon);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .2rem;
+    text-align: center;
+    /*text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);*/ 
+} 
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-container .video{
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.5);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.video-container .video iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.video-container .video iframe:hover{
+    transition: .2s linear;
+    transform: scale(1.3);
+
+}
+
+/*.video-container .video .active{
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0,.7);
+    z-index:  1;
+}
+
+.video-container .video .active: hover{
+    transition: none;
+    transform: translate(-50%, -50%) scale(1);
+} */
